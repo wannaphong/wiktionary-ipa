@@ -116,6 +116,5 @@ class IpaParser(sax.handler.ContentHandler):
 
 if __name__ == "__main__":
     parser = sax.make_parser()
-    parser.setContentHandler(IpaParser('English', ['US', 'GenAm', 'GenAM',
-                                                   'North America']))
+    parser.setContentHandler(IpaParser('Thai')
     parser.parse(open("enwik.xml"))
